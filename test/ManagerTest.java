@@ -1,8 +1,6 @@
 package test;
 import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import tallerPruebas.Employee;
@@ -13,7 +11,7 @@ public class ManagerTest {
     Employee manager;
 
     @Test
-    public void csManager1Test() {//Caso de prueba en el que se calcula 
+    public void csManager1Test() {
         manager = new Employee(20, "USD", 0, EmployeeType.Manager);
         assertNotEquals(0.0f,manager.cs());
     }

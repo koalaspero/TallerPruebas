@@ -1,4 +1,5 @@
 package test;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
 import org.junit.Before;
@@ -10,6 +11,8 @@ import tallerPruebas.EmployeeType;
 public class WorkerTest {
     Employee trabajador1;
     Employee trabajador2;
+    private final float rmu = (float) 386.0;
+
 
     @Before
     public void setup(){
@@ -22,6 +25,7 @@ public class WorkerTest {
     @Test
     public void cybTrabajador1() {
         float bonusTrabajador = trabajador1.CalculateYearBonus();
+        assertEquals(rmu, bonusTrabajador, 0.0F);
         assertNotEquals(0.0F, bonusTrabajador);
     }
        /*En este caso de prueba, se verifica que haya una salida correcta del metodo cs()  
@@ -36,6 +40,7 @@ public class WorkerTest {
     @Test
     public void cybTrabajador2() {
         float bonusTrabajador = trabajador2.CalculateYearBonus();
+        assertEquals(rmu, bonusTrabajador, 0.0F);
         assertNotEquals(0.0F, bonusTrabajador);
     }
     /*En este caso de prueba, se verifica que haya una salida correcta del metodo cs()  
