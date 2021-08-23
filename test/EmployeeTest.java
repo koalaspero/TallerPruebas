@@ -20,7 +20,7 @@ import tallerPruebas.EmployeeType;
 @RunWith(value = Parameterized.class)
 public class EmployeeTest {
     Employee employee;
-	private static int nCaso = 0;
+
 	
 	@Parameters
 	public static Iterable<Object[]> getData() {
@@ -56,10 +56,6 @@ public class EmployeeTest {
     
     @Before
     public void before() {
-    	nCaso++;
-    	System.out.println("Caso #"+nCaso);
-    	System.out.printf("Salary: %.2f, Currency: %s, Bonus: %.2f%%, EmployeeType: %s \n", salary, currency,
-    			bonusPercentage, employeeType);
     	employee = new Employee(salary,currency,bonusPercentage,employeeType);
     }
 
