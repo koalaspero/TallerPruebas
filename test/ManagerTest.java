@@ -13,7 +13,7 @@ public class ManagerTest {
     Employee manager;
 
     @Test
-    public void csManager1Test() {
+    public void csManager1Test() {//Caso de prueba en el que se calcula 
         manager = new Employee(20, "USD", 0, EmployeeType.Manager);
         assertNotEquals(0.0f,manager.cs());
     }
