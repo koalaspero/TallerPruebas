@@ -33,6 +33,7 @@ public class Employee
                 .atZone(ZoneId.systemDefault()).toLocalDate();
         //Obtiene el mes en forma de entero
         int month = localDate.getMonthValue();
+        System.out.println(month);
         // Si la moneda es USD, se considera todo el salario,
         // caso contrario se resta 5% por cambio de moneda
         if(currency == "USD"){salario = salary; }
